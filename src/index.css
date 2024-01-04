@@ -1,13 +1,458 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body{
+  background-image: url('./../public/back-image.jpg');
+    
+      background-position: center;
+      background-repeat: repeat;
+      background-attachment: fixed;
+}
+.poster{
+  height: 320px;
+  width: 320px;
+  border-radius: 20px;
+}
+.poster-container{
+  margin-top: 3.15%;
+  margin-left: 20%;
+  display: flexbox;
+  border-bottom: #b7b7b7 solid 1px;
+}
+.parent{
+  display: flex;
+
+}
+.event{
+  margin-top:7%;
+  margin-left: 5%;
+  font-size: 2.4rem;
+  font-family: -apple-system,BlinkMacSystemFont,Inter,Roboto,Segoe UI,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  width: 550px;
+}
+.event-container{
+  display: flexbox;
+  padding-bottom: 100px;
+  border-bottom: #b7b7b7 solid 1px;
+}
+.date{
+  margin-left: 7%;
+  margin-top: 5%;
+}
+.date-container{
+  display: flex;
+}
+.date-text{
+  margin-top: 4%;
+  margin-left: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.fa-youtube{
+  color: red;
+}
+.youtube{
+  margin-left: 6.25% ;
+  margin-top: 4%;
+}
+.youtube-container{
+  display: flex;
+}
+.youtube-text{
+  margin-top: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2%;
+}
+.host{
+  color: #0f4197cc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 5%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(168, 168, 168);
+}
+.logo{
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  margin-top: 5%;
+}
+.company{
+  display: flex;
+}
+.comp-name{
+  color: rgb( 6, 0, 107 );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 5.5%;
+  margin-left: 3%;
+
+}
+.fa-insta{
+  margin-left: 60%;
+  font-size: 1.1rem;
+  margin-top: 6%;
+  color: #666666;
+  text-decoration: none;
+}
+.fa-twit{
+  font-size: 1.1rem;
+  margin-top: 6%;
+  margin-left: 15px;
+  color: #666666;
+  text-decoration: none;
+}
+.fa-twitter:hover{
+  color: rgb( 6, 0, 107 );
+  cursor: pointer;
+}
+.fa-instagram:hover{
+  color: rgb( 6, 0, 107 );
+  cursor: pointer;
+}
+.comp-name:hover{
+  cursor: pointer;
+  color: rgb(1, 1, 168);
+}
+.regist{
+  display: flexbox;
+  margin-top: 5%;
+  border: 1px solid #b7b7b7;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 7%;
+}
+.button-text{
+  font-family: Tahoma, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 3%;
+  
+ 
+}
+.title{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(239, 239, 239);
+  border-radius: 10px 10px 0px 0px;
+  height: 30px;
+  text-align: center;
+  color: rgb( 6, 0, 107 );
+  padding-top: 2px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+}
+.but-cont{
+ margin-top: 4%; 
+ margin-bottom: 3%;
+}
+.reg-button{
+  margin-left: 4.3%;
+  padding: 7px;
+  border-radius: 7px;
+  border-color: none;
+  width: 465px;
+  background-color: blue;
+  font-family:Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  border:none;
+  outline: none;
+ 
+}
+.about{
+  margin-left: 7%;
+  margin-top: 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12.5px;
+  border-bottom: #b7b7b7 solid 1px;
+  padding-bottom: 10px ;
+}
+.about-text{
+  margin-top: 3%;
+  margin-left: 7%;
+  
+
+}
+.text{
+  font-size: 17.5px;
+  font-family: Tahoma;
+  max-width: 550px;
+}
+.hash-tags{
+  text-decoration: none;
+  color: rgb(1, 1, 168);
+}
+.hash-tags:visited{
+  color: rgb(1, 1, 168);
+}
+.hash-tags:hover{
+  color: rgb( 6, 0, 107 );
+}
+.card {
+width: fit-content;
+height: fit-content;
+background-color: none;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 25px 25px;
+gap: 20px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* for all social containers*/
+.socialContainer {
+width: 52px;
+height: 52px;
+border-radius: 5px;
+background-color: rgb(44, 44, 44);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+background-color: #d62976;
+transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+background-color: #00acee;
+transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+background-color: #0072b1;
+transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+background-color: green;
+transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+transform: scale(0.9);
+transition-duration: 0.3s;
+}
+
+.socialSvg {
+width: 17px;
+}
+
+.socialSvg path {
+fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+0% {
+transform: translateY(-50px);
+opacity: 0;
+}
+
+100% {
+transform: translateY(0);
+opacity: 1;
+}
+}
+.contact-us{
+margin-top: 7%;
+border-bottom: #b7b7b7 solid 1px;
+padding-bottom: 10px;
+font-family: Tahoma, Geneva, Verdana, sans-serif;
+color:#0072b1;
+}
+.sub-cont-but{
+margin-top: 3%;
+}
+/* === removing default button style ===*/
+.button {
+margin: 0;
+height: auto;
+background: transparent;
+padding: 0;
+border: none;
+cursor: pointer;
+}
+
+/* button styling */
+.button {
+--border-right: 6px;
+--text-stroke-color: rgba(255,255,255,0.6);
+--animation-color: rgb(61, 106, 255);
+--fs-size: 2em;
+letter-spacing: 3px;
+text-decoration: none;
+font-size: var(--fs-size);
+font-family: "Arial";
+position: relative;
+text-transform: uppercase;
+color: transparent;
+-webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+position: absolute;
+box-sizing: border-box;
+content: attr(data-text);
+color: var(--animation-color);
+width: 0%;
+inset: 0;
+border-right: var(--border-right) solid var(--animation-color);
+overflow: hidden;
+transition: 0.5s;
+-webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+width: 100%;
+filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.uibut{
+margin-top: 1%;
+margin-left: 2%;
+}
+.reg-button {
+position: relative;
+padding: 10px 20px;
+border-radius: 7px;
+border: 1px solid black;
+font-size: 14px;
+
+font-weight: 600;
+letter-spacing: 1px;
+background-color: black;
+color: white;
+overflow: hidden;
+box-shadow: 0 0 0 0 transparent;
+-webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+font-family: Tahoma, sans-serif;
+}
+
+.reg-button:hover {
+background: rgb(61, 106, 255);
+box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+color: white;
+border: 1px solid rgb(61, 106, 255);
+}
+
+.reg-button:hover::before {
+-webkit-animation: sh02 0.5s 0s linear;
+-moz-animation: sh02 0.5s 0s linear;
+animation: sh02 0.5s 0s linear;
+}
+
+.reg-button::before {
+content: '';
+display: block;
+width: 0px;
+height: 86%;
+position: absolute;
+top: 7%;
+left: 0%;
+opacity: 0;
+background: #fff;
+box-shadow: 0 0 50px 30px #fff;
+-webkit-transform: skewX(-20deg);
+-moz-transform: skewX(-20deg);
+-ms-transform: skewX(-20deg);
+-o-transform: skewX(-20deg);
+transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+from {
+opacity: 0;
+left: 0%;
+}
+
+50% {
+opacity: 1;
+}
+
+to {
+opacity: 0;
+left: 100%;
+}
+}
+
+.reg-button:active {
+box-shadow: 0 0 0 0 transparent;
+-webkit-transition: box-shadow 0.2s ease-in;
+-moz-transition: box-shadow 0.2s ease-in;
+transition: box-shadow 0.2s ease-in;
+}
+footer{
+height: 50px;
+}
+.reg-link{
+color: inherit;
+text-decoration: none;
+font-weight: inherit;
+}
+
+.container {
+  margin-left: 35%;
+  margin-top: 3%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.re-but {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.re-but:hover {
+  background-color: #0056b3;
+}
+.reg-head{
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.custom{
+  margin-left: 0;
+  width: auto;
+}
+.parent-cont{
+  display: flex;
 }
