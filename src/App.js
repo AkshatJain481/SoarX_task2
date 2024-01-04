@@ -6,12 +6,12 @@ import Registration from "./Registration";
 function App() {
   return (
    <>
-    <HashRouterRouter>
+    <HashRouter>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path='/regi' element = {<Registration/>}></Route>
         </Routes>
-    </HashRouterRouter>
+    </HashRouter>
    </>
   );
 }
